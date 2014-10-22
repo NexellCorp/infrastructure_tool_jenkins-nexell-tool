@@ -42,7 +42,14 @@ function write_history()
 {
 	history_file=$1
 	id=$2
-	echo "$id" >> history_file
+
+    echo "history_file ${history_file}, id ${id}"
+
+    if [ -e ${history_file} ]; then
+        echo "$id" >> ${history_file}
+    else
+        echo "$id" > ${history_file}
+    fi
 }
 
 # sequence
