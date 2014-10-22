@@ -73,9 +73,9 @@ def _get_available_patchset(query_reply):
 
 def _write_result_data_to_file(file_name, server, patch_id, project, refs):
 	f = open(file_name, 'w')
-	str_patch_id = "id:%s\n" % patch_id
-	str_project = "project:%s\n" % project
-	str_cmd = "cmd:git fetch %s/%s %s && git checkout FETCH_HEAD" % (server, project, refs)
+	str_patch_id = "id#%s\n" % patch_id
+	str_project = "project#%s\n" % project
+	str_cmd = "cmd#git fetch %s/%s %s && git checkout FETCH_HEAD" % (server, project, refs)
 	f.write(str_patch_id)
 	f.write(str_project)
 	f.write(str_cmd)

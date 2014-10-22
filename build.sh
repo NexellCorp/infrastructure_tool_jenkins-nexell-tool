@@ -3,17 +3,17 @@
 # get from "/tmp/jenkins-git-commands.txt",
 function get_id()
 {
-    echo $(cat $1 | grep "id" | awk -F':' '{print $2}')
+    echo $(cat $1 | grep "id" | awk -F'#' '{print $2}')
 }
 
 function get_project()
 {
-    echo $(cat $1 | grep "project" | awk -F':' '{print $2}')
+    echo $(cat $1 | grep "project" | awk -F'#' '{print $2}')
 }
 
 function get_cmd()
 {
-    echo $(cat $1 | grep "cmd" | awk -F':' '{print $2}')
+    echo $(cat $1 | grep "cmd" | awk -F'#' '{print $2}')
 }
 
 function get_patch_dir()
