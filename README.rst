@@ -22,6 +22,10 @@ linaro-cp.py
 ============
 This script uploads build output(packaging files) to nexell snapshot server
 
-example
-=======
+jenkins-example.sh
+==================
 Jenkins build shell example
+
+lava_job_definition_example.json
+================================
+LAVA Job Definition json example
