@@ -47,8 +47,10 @@ def lava_submit(config, lava_server):
 def main():
 	lava_server = os.environ.get('LAVA_SERVER',
 								'192.168.1.18/RPC2/')
+	print 'lava_server: ', lava_server
 
 	custom_json_url = os.environ.get('CUSTOM_JSON_URL')
+	print 'custom_json_url: ', custom_json_url
 	if custom_json_url is not None:
 		request = urllib2.Request(custom_json_url)
 
