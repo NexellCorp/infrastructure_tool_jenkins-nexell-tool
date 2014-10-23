@@ -142,7 +142,7 @@ function generate_2ndboot()
     ${TOP}/linux/pyrope/tools/bin/nx_bingen -t 2ndboot -d ${option_d} -o ${secondboot_out_file} -i ${secondboot_file} -n ${nsih_file} -l 0x40100000 -e 0x40100000 ${option_p}
 }
 
-# sequence
+# example sequence
 #WORKSPACE="/home/swpark/ws"
 #BRANCH_NAME="kitkat-mr1-pyrope-dev"
 #TOP="${WORKSPACE}/${BRANCH_NAME}"
