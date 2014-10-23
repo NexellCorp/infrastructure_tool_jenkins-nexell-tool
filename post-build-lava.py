@@ -27,7 +27,7 @@ def lava_submit(config, lava_server):
 
 	try:
 		server_url = \
-		    'https://{lava_user:>s}:{lava_token:>s}@{lava_server:>s}'
+		    'http://{lava_user:>s}:{lava_token:>s}@{lava_server:>s}'
 		server = \
 		    xmlrpclib.ServerProxy(server_url.format(
 		    	    lava_user=lava_user,
