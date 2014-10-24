@@ -1,6 +1,6 @@
 #!/bin/bash
 JENKINS_GIT_COMMAND_FILE="/tmp/jenkins-git-commands.txt"
-HISTORY_FILE="${WORKSPACE}/patch-history.txt"
+HISTORY_FILE="${JENKINS_HOME}/userContent/patch-history.txt"
 
 BRANCH="kitkat-mr1-pyrope-dev"
 BOARD_NAME="lynx"
